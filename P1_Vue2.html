@@ -109,10 +109,10 @@
                 </div>
                 <h5>Cantidad</h5>
                 <div class="quantity">
-                    <button @click="counter -= 1">-</button> <div>{{ counter }}</div> <button v-on:click="counter += 1">+</button>
+                    <button @click="subnum">-</button> <div>{{ counter }}</div> <button v-on:click="addnum">+</button>
                 </div>
                 <div class="buy-box">
-                    <button type="button" class="btn btn-primary" v-on:click.once="miClick(`${pedido}`)">Comprar</button>
+                    <button type="button" class="btn btn-primary" v-on:click.once="miClick2(`${pedido}`)">Comprar</button>
                 </div>
                 
             </div>

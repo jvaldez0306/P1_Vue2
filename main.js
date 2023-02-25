@@ -67,11 +67,24 @@ var app = new Vue ({
         
     methods: {
         miClick: function(mensaje){
-            alert(mensaje);
+            alert(mensaje);  
+        },
+        miClick2: function(mensaje){
+            alert(mensaje,this.pedido);
+        },
+        addnum: function(){
+            this.counter++;
+        },
+        subnum: function(){
+            if(this.counter>1){
+                this.counter--;
+        }          
+
         }
-    },
+    }
+})
 
    
             
-    } 
-)
+    
+
